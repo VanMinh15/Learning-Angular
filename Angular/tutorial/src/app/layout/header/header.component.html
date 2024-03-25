@@ -2,7 +2,12 @@
   <img src="assets/images/products/logo.jpg" alt="Logo image" class="logo" />
 
   <div class="row gap-1">
-    <a routerLink="/" routerLinkActive="active">Home</a>
+    <a
+      routerLink="/"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+      >Home</a
+    >
     <a routerLink="/about-us" routerLinkActive="active">About</a>
   </div>
 </header>
